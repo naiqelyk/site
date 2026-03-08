@@ -1,48 +1,10 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
-
-interface Post {
-  date: string;
-  title: string;
-  slug: string;
-}
-
-interface PostSection {
-  category: string;
-  posts: Post[];
-}
-
-const sections: PostSection[] = [
-  {
-    category: "Recent",
-    posts: [
-      { date: "Mar 2025", title: "Building in public", slug: "#" },
-      { date: "Jan 2025", title: "Goals for 2025", slug: "#" },
-      { date: "Dec 2024", title: "Year in review: 2024", slug: "#" },
-    ],
-  },
-  {
-    category: "Annual Reviews",
-    posts: [
-      { date: "Dec 2024", title: "Year in review: 2024", slug: "#" },
-      { date: "Dec 2023", title: "Year in review: 2023", slug: "#" },
-      { date: "Dec 2022", title: "Year in review: 2022", slug: "#" },
-    ],
-  },
-  {
-    category: "Essays",
-    posts: [
-      { date: "Nov 2024", title: "On craft and caring about your work", slug: "#" },
-      { date: "Aug 2024", title: "Lessons from scaling a team", slug: "#" },
-      { date: "May 2024", title: "Why I write", slug: "#" },
-      { date: "Feb 2024", title: "The case for reading fiction", slug: "#" },
-      { date: "Oct 2023", title: "Things I believe about software", slug: "#" },
-      { date: "Jun 2023", title: "On making decisions", slug: "#" },
-    ],
-  },
-];
+import { getWritingPosts } from "@/lib/writing";
 
 export default function Writing() {
+  const sections = getWritingPosts();
+
   return (
     <div>
       <h1 className="text-2xl font-semibold mb-2 font-[family-name:var(--font-serif)]">
