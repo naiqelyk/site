@@ -13,30 +13,10 @@ interface BookSection {
 
 const booksByYear: BookSection[] = [
   {
-    year: "2025",
+    year: "2026",
     books: [
-      { title: "Intermezzo", author: "Sally Rooney" },
-      { title: "The Remains of the Day", author: "Kazuo Ishiguro" },
-      { title: "Stoner", author: "John Williams" },
-      { title: "Dept. of Speculation", author: "Jenny Offill" },
-    ],
-  },
-  {
-    year: "2024",
-    books: [
-      { title: "Tomorrow, and Tomorrow, and Tomorrow", author: "Gabrielle Zevin" },
-      { title: "The Three-Body Problem", author: "Cixin Liu" },
-      { title: "Klara and the Sun", author: "Kazuo Ishiguro" },
-      { title: "Sapiens", author: "Yuval Noah Harari" },
-      { title: "Meditations", author: "Marcus Aurelius" },
-    ],
-  },
-  {
-    year: "2023",
-    books: [
-      { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
-      { title: "Atomic Habits", author: "James Clear" },
-      { title: "Project Hail Mary", author: "Andy Weir" },
+      { title: "Ikigai: The Japanese Secret to a Long and Happy Life", author: "Hector Garcia, Francesc Miralles" },
+      { title: "Things in Nature Merely Grow", author: "Yiyun Li" },
     ],
   },
 ];
