@@ -15,6 +15,7 @@ const booksByYear: BookSection[] = [
   {
     year: "2026",
     books: [
+      { title: "The Player of Games", author: "Iain Banks" },
       { title: "Ikigai: The Japanese Secret to a Long and Happy Life", author: "Hector Garcia, Francesc Miralles" },
       { title: "Things in Nature Merely Grow", author: "Yiyun Li" },
     ],

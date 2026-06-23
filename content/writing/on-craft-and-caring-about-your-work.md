@@ -1,6 +1,6 @@
 ---
 title: "On craft and caring about your work"
-date: "Nov 2024"
+date: "Jun 2026"
 category: "Essays"
 slug: "#"
 ---
