@@ -13,6 +13,10 @@ export interface PostSection {
   posts: Post[];
 }
 
+export interface PostWithContent extends Post {
+  content: string;
+}
+
 const CATEGORY_ORDER = ["Recent", "Annual Reviews", "Essays"];
 
 const MONTH_MAP: Record<string, number> = {
@@ -53,4 +57,37 @@ export function getWritingPosts(): PostSection[] {
     category: cat,
     posts: grouped[cat].sort((a, b) => parseDate(b.date) - parseDate(a.date)),
   }));
+}
+
+export function getWritingPost(slug: string): PostWithContent | null {
+  const dir = path.join(process.cwd(), "content/writing");
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".md"));
+
+  for (const file of files) {
+    const raw = fs.readFileSync(path.join(dir, file), "utf-8");
+    const { data, content } = matter(raw);
+
+    if (data.slug === `/writing/${slug}`) {
+      return {
+        title: data.title,
+        date: data.date,
+        slug: data.slug,
+        content,
+      };
+    }
+  }
+
+  return null;
+}
+
+export function getAllWritingSlugs(): string[] {
+  const dir = path.join(process.cwd(), "content/writing");
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".md"));
+
+  return files.map((file) => {
+    const raw = fs.readFileSync(path.join(dir, file), "utf-8");
+    const { data } = matter(raw);
+    const slug: string = data.slug ?? "";
+    return slug.replace("/writing/", "");
+  });
 }

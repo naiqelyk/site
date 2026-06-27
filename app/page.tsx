@@ -13,7 +13,7 @@ export default function About() {
           </p>
           <p>
             Currently, I work at{" "}
-            <a href="https://www.meta.com/">Meta</a> on a Wearables Infra team -- I primarily focus on AI native tooling and orchestration to enable teams to rebuild everyday workflows. 
+            <a href="https://www.meta.com/">Meta</a> on a Wearables Infra team -- I primarily focus on AI native tooling and orchestration enabling teams to rebuild everyday workflows. 
             Previously, I worked on product teams in Instagram Ads and Facebook Creator Monetization.
           </p>
           <p>
@@ -29,7 +29,7 @@ export default function About() {
         </h2>
         <div className="space-y-4 text-[15px] leading-relaxed">
           <p>
-            Outside of work, I enjoy poker + other strategy games, running and lifting, watching NBA, and travelling to new places.
+            Outside of work, I enjoy poker + other strategy games, running and lifting, watching NBA, and traveling to new places.
           </p>
         </div>
       </section>
