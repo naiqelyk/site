@@ -9,16 +9,18 @@ export default function About() {
         </h1>
         <div className="space-y-4 text-[15px] leading-relaxed text-[var(--color-text)]">
           <p>
-            I&apos;m a software engineer based in New York.
+            I&apos;m a software engineer based in NYC. I'm currently exploring something new...
           </p>
           <p>
-            Currently, I work at{" "}
-            <a href="https://www.meta.com/">Meta</a> on a Wearables Infra team -- I primarily focus on AI native tooling and orchestration enabling teams to rebuild everyday workflows. 
-            Previously, I worked on product teams in Instagram Ads and Facebook Creator Monetization.
+            Previously, I worked on scaling Wearables infrastructure and solving growth problems across Instagram Ads at{" "}
+            <a href="https://www.meta.com/">Meta</a>.
           </p>
           <p>
             Before that, I studied Applied Math - Computer Science at{" "}
             <a href="https://www.brown.edu/">Brown University</a>.
+          </p>
+          <p>
+            I'm especially interested in the spaces of leveraging AI for developer productivity, trading + market making, and healthcare technology.
           </p>
         </div>
       </section>
@@ -29,7 +31,13 @@ export default function About() {
         </h2>
         <div className="space-y-4 text-[15px] leading-relaxed">
           <p>
-            Outside of work, I enjoy poker + other strategy games, running and lifting, watching NBA, and traveling to new places.
+            Outside of work, I'm highly interested in:
+            <ul>
+              <li>poker</li>
+              <li>crypto</li>
+              <li>running/lifting</li>
+              <li>NBA</li>
+            </ul>
           </p>
         </div>
       </section>
