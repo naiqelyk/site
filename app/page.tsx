@@ -30,15 +30,13 @@ export default function About() {
           Interests
         </h2>
         <div className="space-y-4 text-[15px] leading-relaxed">
-          <p>
-            Outside of work, I'm highly interested in:
-            <ul>
-              <li>poker</li>
-              <li>crypto</li>
-              <li>running/lifting</li>
-              <li>NBA</li>
-            </ul>
-          </p>
+          <p>Outside of work, I'm highly interested in:</p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>poker</li>
+            <li>crypto</li>
+            <li>running/lifting</li>
+            <li>NBA</li>
+          </ul>
         </div>
       </section>
 
